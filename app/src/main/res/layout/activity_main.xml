@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/showListButton"
+        android:id="@+id/camera_preview"/>
+
+    <Space
+        android:layout_width="@dimen/spaceSide"
+        android:layout_height="@dimen/spaceSide"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/space"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:layout_above="@+id/space"
+        android:id="@+id/top"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:layout_below="@+id/space"
+        android:id="@+id/bottom"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/top"
+        android:layout_toLeftOf="@id/space"
+        android:id="@+id/left"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/top"
+        android:layout_toRightOf="@id/space"
+        android:id="@+id/right"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_alignParentBottom="true"
+        android:text="@string/showListButton"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:fontFamily="@font/helvetica_neue_cyr"
+        android:textSize="@dimen/buttonTextSize"
+        android:id="@+id/showListButton"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/hint"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/myriad_pro"
+        android:textSize="@dimen/hintTextSize"
+        android:paddingTop="8px"
+        android:id="@+id/hint"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/showListButton"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/camera_front_round"
+        android:background="@color/clear"
+        android:layout_margin="@dimen/roundButtonMargin"
+        android:id="@+id/roundButton"
+        />
+</RelativeLayout>

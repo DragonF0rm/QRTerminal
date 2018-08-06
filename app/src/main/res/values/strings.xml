@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QRTerminal</string>
+    <string name="showListButton">Список зарегистрированных</string>
+    <string name="hint">Разместите код внутри рамки</string>
+</resources>

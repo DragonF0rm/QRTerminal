@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spaceSide">400px</dimen>
+    <dimen name="buttonHeight">175px</dimen>
+    <dimen name="buttonTextSize">60px</dimen>
+    <dimen name="hintTextSize">40px</dimen>
+    <dimen name="roundButtonMargin">35px</dimen>
+</resources>
